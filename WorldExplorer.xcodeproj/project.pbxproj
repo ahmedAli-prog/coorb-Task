@@ -61,7 +61,7 @@
 		C30A1C692D2D2CA4003E4680 /* WorldExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldExplorerApp.swift; sourceTree = "<group>"; };
 		C30A1C6D2D2D2CA9003E4680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30A1C702D2D2CA9003E4680 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C30A1C752D2D2CA9003E4680 /* Countries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countries.xcdatamodel; sourceTree = "<group>"; };
+		C30A1C752D2D2CA9003E4680 /* WorldExplorer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorldExplorer.xcdatamodel; sourceTree = "<group>"; };
 		C3772AE22D2D30AE000D087F /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		C3772AE42D2D30CC000D087F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		C3772AE62D2D3365000D087F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				C390A4A02D2EDBB6007494DF /* WorldExplorerTests.xctestplan */,
-				C30A1C682D2D2CA4003E4680 /* Countries */,
+				C30A1C682D2D2CA4003E4680 /* WorldExplorer */,
 				C3AA66392D2ED0FD00BCDDE4 /* WorldExplorerTests */,
 				C30A1C672D2D2CA4003E4680 /* Products */,
 			);
@@ -138,7 +138,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C30A1C682D2D2CA4003E4680 /* Countries */ = {
+		C30A1C682D2D2CA4003E4680 /* WorldExplorer */ = {
 			isa = PBXGroup;
 			children = (
 				C3772B0E2D2D6308000D087F /* Info.plist */,
@@ -228,12 +228,12 @@
 		C3772AF92D2D599D000D087F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C3772AFA2D2D59AC000D087F /* SearchCountry */,
+				C3772AFA2D2D59AC000D087F /* Explorer */,
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		C3772AFA2D2D59AC000D087F /* SearchCountry */ = {
+		C3772AFA2D2D59AC000D087F /* Explorer */ = {
 			isa = PBXGroup;
 			children = (
 				C3772AFB2D2D59BC000D087F /* DomainLayer */,
@@ -255,8 +255,8 @@
 		C3772AFC2D2D59C6000D087F /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				C3772B082D2D5E2F000D087F /* CountryList */,
-				C3772B092D2D5E38000D087F /* CountryDetails */,
+				C3772B082D2D5E2F000D087F /* ExplorerList */,
+				C3772B092D2D5E38000D087F /* CountryDetail */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
-		C3772B082D2D5E2F000D087F /* CountryList */ = {
+		C3772B082D2D5E2F000D087F /* ExplorerList */ = {
 			isa = PBXGroup;
 			children = (
 				C3772B142D2D700B000D087F /* ExplorerUseCase.swift */,
@@ -298,7 +298,7 @@
 			path = ExplorerList;
 			sourceTree = "<group>";
 		};
-		C3772B092D2D5E38000D087F /* CountryDetails */ = {
+		C3772B092D2D5E38000D087F /* CountryDetail */ = {
 			isa = PBXGroup;
 			children = (
 				C3772B4C2D2EA7CA000D087F /* DetailView.swift */,
@@ -351,7 +351,7 @@
 			path = Persistence;
 			sourceTree = "<group>";
 		};
-		C390A4A32D2EDCEF007494DF /* SearchCountryModule */ = {
+		C390A4A32D2EDCEF007494DF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				C3A9005E2D2EDE5E0023CEE1 /* Mock */,
@@ -377,15 +377,15 @@
 		C3AA66392D2ED0FD00BCDDE4 /* WorldExplorerTests */ = {
 			isa = PBXGroup;
 			children = (
-				C3AA66412D2ED46400BCDDE4 /* CountryDetailTests */,
+				C3AA66412D2ED46400BCDDE4 /* ExplorerTests */,
 			);
 			path = WorldExplorerTests;
 			sourceTree = "<group>";
 		};
-		C3AA66412D2ED46400BCDDE4 /* CountryDetailTests */ = {
+		C3AA66412D2ED46400BCDDE4 /* ExplorerTests */ = {
 			isa = PBXGroup;
 			children = (
-				C390A4A32D2EDCEF007494DF /* SearchCountryModule */,
+				C390A4A32D2EDCEF007494DF /* Tests */,
 			);
 			path = ExplorerTests;
 			sourceTree = "<group>";
@@ -393,7 +393,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C30A1C652D2D2CA4003E4680 /* Countries */ = {
+		C30A1C652D2D2CA4003E4680 /* WorldExplorer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C30A1C792D2D2CA9003E4680 /* Build configuration list for PBXNativeTarget "WorldExplorer" */;
 			buildPhases = (
@@ -466,7 +466,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C30A1C652D2D2CA4003E4680 /* Countries */,
+				C30A1C652D2D2CA4003E4680 /* WorldExplorer */,
 				C3AA66372D2ED0FD00BCDDE4 /* WorldExplorerTests */,
 			);
 		};
@@ -545,7 +545,7 @@
 /* Begin PBXTargetDependency section */
 		C3AA663D2D2ED0FE00BCDDE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C30A1C652D2D2CA4003E4680 /* Countries */;
+			target = C30A1C652D2D2CA4003E4680 /* WorldExplorer */;
 			targetProxy = C3AA663C2D2ED0FE00BCDDE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -680,11 +680,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"Countries/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WorldExplorer/Preview Content\"";
 				DEVELOPMENT_TEAM = D6TBJ96DP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Countries/Info.plist;
+				INFOPLIST_FILE = WorldExplorer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -715,10 +715,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"Countries/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WorldExplorer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Countries/Info.plist;
+				INFOPLIST_FILE = WorldExplorer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -756,7 +756,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldExplorer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Countries";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldExplorer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WorldExplorer";
 			};
 			name = Debug;
 		};
@@ -775,7 +775,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldExplorer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Countries";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldExplorer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WorldExplorer";
 			};
 			name = Release;
 		};
@@ -834,9 +834,9 @@
 		C30A1C742D2D2CA9003E4680 /* WorldExplorer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C30A1C752D2D2CA9003E4680 /* Countries.xcdatamodel */,
+				C30A1C752D2D2CA9003E4680 /* WorldExplorer.xcdatamodel */,
 			);
-			currentVersion = C30A1C752D2D2CA9003E4680 /* Countries.xcdatamodel */;
+			currentVersion = C30A1C752D2D2CA9003E4680 /* WorldExplorer.xcdatamodel */;
 			path = WorldExplorer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
