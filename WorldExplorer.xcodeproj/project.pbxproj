@@ -25,7 +25,7 @@
 		C3772B122D2D6B30000D087F /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3772B112D2D6B30000D087F /* SearchFieldView.swift */; };
 		C3772B152D2D700B000D087F /* ExplorerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3772B142D2D700B000D087F /* ExplorerUseCase.swift */; };
 		C3772B172D2D7F7D000D087F /* ExplorerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3772B162D2D7F7D000D087F /* ExplorerRouter.swift */; };
-		C3772B192D2D8C0E000D087F /* WorldCountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3772B182D2D8C0E000D087F /* WorldCountryData.swift */; };
+		C3772B192D2D8C0E000D087F /* WorldCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3772B182D2D8C0E000D087F /* WorldCountry.swift */; };
 		C3772B1C2D2DA2A6000D087F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C3772B1B2D2DA2A6000D087F /* Kingfisher */; };
 		C3772B1F2D2DD5D8000D087F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3772B1E2D2DD5D8000D087F /* LocationManager.swift */; };
 		C3772B272D2DDFDE000D087F /* LocationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3772B232D2DDBF4000D087F /* LocationManagerProtocol.swift */; };
@@ -78,7 +78,7 @@
 		C3772B112D2D6B30000D087F /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
 		C3772B142D2D700B000D087F /* ExplorerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerUseCase.swift; sourceTree = "<group>"; };
 		C3772B162D2D7F7D000D087F /* ExplorerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerRouter.swift; sourceTree = "<group>"; };
-		C3772B182D2D8C0E000D087F /* WorldCountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCountryData.swift; sourceTree = "<group>"; };
+		C3772B182D2D8C0E000D087F /* WorldCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCountry.swift; sourceTree = "<group>"; };
 		C3772B1E2D2DD5D8000D087F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C3772B232D2DDBF4000D087F /* LocationManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerProtocol.swift; sourceTree = "<group>"; };
 		C3772B282D2DE6E4000D087F /* LocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerDelegate.swift; sourceTree = "<group>"; };
@@ -292,7 +292,7 @@
 				C3772B0A2D2D5E7E000D087F /* ExplorerViewModel.swift */,
 				C3772B0C2D2D5E8C000D087F /* ExplorerView.swift */,
 				C3772B162D2D7F7D000D087F /* ExplorerRouter.swift */,
-				C3772B182D2D8C0E000D087F /* WorldCountryData.swift */,
+				C3772B182D2D8C0E000D087F /* WorldCountry.swift */,
 				C3AA66322D2ECF0A00BCDDE4 /* ExplorerError.swift */,
 			);
 			path = ExplorerList;
@@ -499,7 +499,7 @@
 				C3772AE52D2D30CC000D087F /* Endpoints.swift in Sources */,
 				C3772B4B2D2E7F63000D087F /* DataStore.swift in Sources */,
 				C3772AF22D2D4A6A000D087F /* Environment.swift in Sources */,
-				C3772B192D2D8C0E000D087F /* WorldCountryData.swift in Sources */,
+				C3772B192D2D8C0E000D087F /* WorldCountry.swift in Sources */,
 				C30A1C762D2D2CA9003E4680 /* WorldExplorer.xcdatamodeld in Sources */,
 				C3772B292D2DE6E4000D087F /* LocationManagerDelegate.swift in Sources */,
 				C3772B0D2D2D5E8C000D087F /* ExplorerView.swift in Sources */,
