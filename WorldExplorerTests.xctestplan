@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "04A6EBF6-59F1-4941-BFED-FC8F9E849B98",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:WorldExplorer.xcodeproj",
+      "identifier" : "C30A1C652D2D2CA4003E4680",
+      "name" : "WorldExplorer"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:WorldExplorer.xcodeproj",
+        "identifier" : "C3AA66372D2ED0FD00BCDDE4",
+        "name" : "WorldExplorerTests"
+      }
+    }
+  ],
+  "version" : 1
+}
